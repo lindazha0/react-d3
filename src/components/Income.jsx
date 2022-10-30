@@ -1,17 +1,26 @@
 import React from 'react';
+import node from './boxplot';
+import rd3 from 'react-d3-library';
+const RD3Component = rd3.Component;
 
-const Input = () => {
-//     const rd3 = require('react-d3-library');
-//     const RD3Component = rd3.Component;
+class Income extends React.Component {
 
-//     module.exports = React.createClass({
-//         getInitialState: function(){}
-//     })
-    return (
-        <div className="Income-view">
-
-        </div>
+    constructor(props) {
+      super(props);
+      this.state = {d3: ''}
+    }
+  
+    componentDidMount() {
+      this.setState({d3: node});
+    }
+  
+    render() {
+      return (
+      <div className='Income-View'>
+        <RD3Component data={this.state.d3} />
+      </div>
     )
-}
+  }
+};
 
-export default Input;
+export default Income;
