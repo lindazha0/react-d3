@@ -1,38 +1,92 @@
 .App {
   text-align: center;
+  /* MacBook Pro 14" - 1 */
+
+  position: relative;
+  width: 1512px;
+  height: 982px;
+
+  background: linear-gradient(230.28deg, #206788 4.9%, #B39DDB 77.94%);
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: absolute;
+  width: 268px;
+  height: 60px;
+  left: 83px;
+  top: 42px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.V-button {
+  /* voice-input-button css */
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 66px;
+  top: 820px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.D-button {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 259px;
+  top: 820px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Input-panel {
+  position: absolute;
+  width: 382px;
+  height: 641px;
+  left: 30px;
+  top: 132px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Income-view {
+  position: absolute;
+  width: 677px;
+  height: 451px;
+  left: 444px;
+  top: 27px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.Expense-view {
+  position: absolute;
+  width: 677px;
+  height: 443px;
+  left: 444px;
+  top: 508px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.Income-history {
+  position: absolute;
+  width: 335px;
+  height: 451px;
+  left: 1148px;
+  top: 27px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.Expense-history {
+  position: absolute;
+  width: 335px;
+  height: 443px;
+  left: 1148px;
+  top: 508px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
 }

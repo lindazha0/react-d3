@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
+import vButton from './assets/voice_button.svg';
+import dButton from './assets/db_button.svg';
 import './App.css';
+// the components
+import InputPanel from './components/Input';
+import Income from './components/Income';
+import IncomeLog from './components/IncomeLog';
+import Expense from './components/Expense';
+import ExpenseLog from './components/ExpenseLog';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={logo} className="App-logo" alt="logo"/>
+      <InputPanel />
+      <Income />
+      <IncomeLog />
+      <Expense />
+      <ExpenseLog />
+      <img src={vButton} className="V-button" alt="voice"/>
+      <img src={dButton} className="D-button" alt="database"/>
     </div>
   );
 }
